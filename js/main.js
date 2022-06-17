@@ -1,5 +1,5 @@
 $(function (){
-    console.log("andrei_xui")
+
     $('.photo__slider').slick({
         slidesToShow: 1,
         arrows: false,
