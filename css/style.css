@@ -203,13 +203,13 @@ body{
 }
 
 .about__box::before{
-     background-image: url('../images/decor-left.svg');
+     background-image: url('../images/arrow-left.svg');
      left: 19px;
      top: 19px;
  }
 
 .about__box::after{
-    background-image: url('../images/decor-right.svg');
+    background-image: url('../images/arrow-right.svg');
     border-bottom: 2px solid #ECB84C;
     border-right: 2px solid #ECB84C;
     right: 19px;
