@@ -342,7 +342,7 @@ body{
 
 .footer__item-link--social{
     padding-left: 28px;
-    position: absolute;
+    position: relative;
 }
 
 .footer__item-link--social::before{
