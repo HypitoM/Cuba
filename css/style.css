@@ -32,6 +32,7 @@ body{
     line-height: 38px;
     text-align: center;
     margin-bottom: 22px;
+    font-weight: 400;
 }
 
 .container{
@@ -246,6 +247,91 @@ body{
     border-left: 2px solid #ECB84C;
 }
 
+.about__preview-title{
+    margin-bottom: 38px;
+}
+
+.about__preview-text{
+    margin: 53px auto 80px;
+}
+
+.about__images-box{
+    padding-top: 73px;
+    position: relative;
+}
+
+.about__dot{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgba(236, 184, 76, .75);
+    position: absolute;
+    cursor: pointer;
+}
+
+.about__dot--1{
+    top: 190px;
+    left: 150px;
+}
+
+.about__dot--2{
+    top: 188px;
+    left: 495px;
+}
+
+.about__dot--3{
+    top: 147px;
+    right: 374px;
+}
+
+.about__dot--4{
+    bottom: 28px;
+    right: 299px;
+}
+
+.about__dot::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffd600;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.about__dot::before{
+    content: "";
+    position: absolute;
+    background-image: url('../images/line.svg');
+    width: 244px;
+    height: 122px;
+    top: -113px;
+    left: 25px;
+    display: none;
+}
+
+.about__dot-text{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 28px;
+    color: #505050;
+    position: absolute;
+    top: -140px;
+    left: 150px;
+    white-space: nowrap;
+    display: none;
+}
+
+.about__dot:hover::before{
+    display: block;
+}
+
+.about__dot:hover .about__dot-text{
+    display: block;
+}
+
 .photo{
     padding: 80px 0;
 }
@@ -278,6 +364,7 @@ body{
 .photo__slider{
     max-width: 640px;
     margin: 0 auto;
+    filter: drop-shadow(0px 2px 24px rgba(0, 0, 0, 0.3));
 }
 
 .slick-arrow{
@@ -295,7 +382,6 @@ body{
 
 .slick-prev{
     left: -20px;
-
 }
 
 .slick-next{
@@ -382,3 +468,58 @@ body{
     line-height: 19px;
 }
 
+@media (max-width: 700px){
+    .header__title{
+        font-size: 120px;
+        line-height: 150px;
+    }
+    .header__text{
+        font-size: 20px;
+    }
+    .menu{
+        position: relative;
+    }
+    .menu__btn{
+        display: block;
+        width: 40px;
+        cursor: pointer;
+        position: absolute;
+        right: 40px;
+        top: 10px;
+    }
+    .menu__btn span{
+        display: block;
+        margin-bottom: 10px;
+        background-color: #ffd600;
+        height: 4px;
+    }
+    .menu__list{
+        display: none;
+        text-align: center;
+        padding-top: 60px;
+        border-bottom: 4px solid #ECB84C;
+        transition: all 0s;
+    }
+    .menu__list-link{
+        display: block;
+        border-top: 4px solid #ECB84C;
+    }
+    .menu__list-link:hover {
+        border-bottom: 4px solid transparent;
+    }
+}
+
+@media (max-width: 540px){
+    .header__text{
+        display: none;
+    }
+    .header__top-inner{
+        border: 2px solid #ECB84C;
+    }
+    .header__top{
+        padding: 10px;
+    }
+    .header__title{
+        font-size: 100px;
+    }
+}
